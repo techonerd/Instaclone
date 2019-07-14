@@ -2,5 +2,6 @@
 
 #testing with private account
 
-cd Instaclone
-pip install django
+cd Instaclone \n
+pip install django \n
+
