@@ -21,15 +21,13 @@ class Post(models.Model):
         return "Pic"+ str(self.upload_time)
 
 class Profile(models.Model):
-    def get_user(self):
-        return User.get(user_id=1)
-        
+    # def get_user(self):
+    #     return User.Object.get(user_id=1)
     dis_pic = models.ImageField()
-    user =models.ForeignKey(User, on_delete=models.CASCADE, default=get_user)
+    # user =models.ForeignKey(User, on_delete=models.CASCADE, default=get_user)
     # follower = models.ManyToManyField(to = User)
     # following = models.ManyToManyField(to = User)
     post = models.ForeignKey(Post, on_delete= models.CASCADE)
-
     # def __str__(self):
     #     return "dp"+str(self.user.username)
 
