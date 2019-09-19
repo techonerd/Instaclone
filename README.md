@@ -3,4 +3,6 @@
 #testing with private account
 
 cd Instaclone
-pip install django
+pip install requirement.txt
+
+sdfgdsdv
